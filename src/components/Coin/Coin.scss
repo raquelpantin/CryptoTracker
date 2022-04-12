@@ -1,0 +1,64 @@
+@use "../../App.scss" as *;
+@use "../../partials/_mixins.scss";
+@use "../../partials/_fonts.scss";
+
+.coin {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1.75px solid white;
+    font-size: 1.14rem;
+  }
+
+  &__card-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__img {
+    width: 12vw;
+  }
+
+  &__name {
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  &__symbol {
+    font-size: 1.25rem;
+  }
+
+  &__list-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    width: 16rem;
+  }
+
+  &__list-labels {
+    display: flex;
+  }
+
+  &__list-item {
+    list-style: none;
+  }
+
+  &__card-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 1.5rem;
+  }
+
+  &__price-change--red {
+    color: red;
+  }
+
+  &__price-change--green {
+    color: limegreen;
+  }
+}
